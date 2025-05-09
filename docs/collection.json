@@ -1,0 +1,35 @@
+{
+  "info": {
+    "name": "Image Upload CDN Local",
+    "_postman_id": "bcbec4e1-cc11-49cc-a8b1-f93cb88c2825",
+    "description": "Coleção para testar a rota de upload de imagens em um CDN local com NestJS.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Upload de Imagem",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "src": "/caminho/para/sua/imagem.jpg"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:3000/image-upload",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["image-upload"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
