@@ -5,8 +5,9 @@ import {
   UseInterceptors,
 } from '@nestjs/common';
 import { FileInterceptor } from '@nestjs/platform-express';
-import { multerConfig } from './multer-config';
+
 import { ImageUploadService } from './image-upload.service';
+import { multerConfig } from './multer-config';
 
 @Controller('image-upload')
 export class ImageUploadController {
